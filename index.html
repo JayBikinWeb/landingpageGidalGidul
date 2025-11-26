@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Gidal Gidul</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5fff8;
+      }
+
+      header {
+        background-color: rgb(38, 172, 105);
+        text-align: center;
+        padding: 20px 0;
+        color: white;
+      }
+
+      nav {
+        background-color: rgb(182, 224, 158);
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(38, 172, 105);
+        margin: 0 15px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+        background-color: rgb(38, 172, 105);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px 0;
+        height: 400px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        background: url("spring-floral-border-background-green-with-leaf-watercolor-illustration.jpg")
+        no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 40px 0;
+      }
+
+      .services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .service {
+        flex: 1;
+        min-width: 250px;
+        background: #e6f7ed;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .service h3 {
+        color: rgb(38, 172, 105);
+      }
+
+      form {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        background: rgb(38, 172, 105);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: rgb(30, 140, 85);
+      }
+
+      footer {
+        text-align: center;
+        background: rgb(38, 172, 105);
+        color: white;
+        padding: 15px 0;
+        margin-top: 30px;
+      }
+
+      h2 {
+        color: rgb(38, 172, 105);
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .services {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang di PT Gidal Gidul</h1>
+      <p>PT Terbaik sepanjang masa adalah PT gidal gidul</p>
+    </header>
+
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="hero" id="beranda">
+      <h1>Selamat datang di Website kami</h1>
+    </section>
+
+    <section class="container" id="layanan">
+      <h2>Layanan Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Layanan Servis Komputer</h3>
+          <p>Komputer, laptop & lainnya</p>
+        </div>
+        <div class="service">
+          <h3>Jasa Bongkar pasang</h3>
+          <p>Tidak menerima masang kembali hanya menerima bongkar</p>
+        </div>
+        <div class="service">
+          <h3>Jasa perbaikan</h3>
+          <p>tidak menerima perbaikan jika hubungan sudah rusak</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="tentang">
+      <h2>Tentang Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Visi</h3>
+          <p>Menjadi penyedia layanan servis terpercaya dan profesional.</p>
+        </div>
+        <div class="service">
+          <h3>Misi</h3>
+          <p>Memberikan pelayanan terbaik dengan harga terjangkau.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="kontak">
+      <h2>Hubungi Kami</h2>
+      <form action="">
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan nama Anda" />
+        <label>Email</label>
+        <input type="email" placeholder="Masukkan email Anda" />
+        <label>Pesan</label>
+        <textarea rows="5" placeholder="Masukkan pesan Anda"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 PT Doa Ibu. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
